@@ -1,0 +1,19 @@
+
+# to export conda environment list in a file
+# make sure you are in conda environment
+ conda list -e > {filename.txt} 
+
+# to install python packages from txt file
+pip install -r {filename.txt}
+
+# create conda environment using the txt file having requirements in it
+conda create -n {env-name} --file {filename.txt}
+
+#to list conda available env in your system
+conda env list 
+
+# to initiate conda environment
+source activate {env-name}
+
+# to deactivate conda environment
+source deactivate {env-name}
